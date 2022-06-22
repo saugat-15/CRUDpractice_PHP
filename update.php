@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
 
         $db->query($sql);
         if ($sql) {
-            echo "<p>User updated</p>";
+            echo "<p class='alert alert-success'>User updated</p>";
         };
         $db->close();
     } else {
@@ -88,7 +88,7 @@ if (isset($_POST['submit'])) {
     Contact: <input type="text" class="form-control" name="contact" value="<?php
                                                         echo htmlspecialchars($contact, ENT_QUOTES);
                                                         ?>"><br>
-    <input type="submit" name="submit" class="btn btn-success" value="Register">
+    <input type="submit" name="submit" class="btn btn-success" value="Update">
     <a href="form.php" class="btn btn-info">home</a>
 </form>
 </div>
